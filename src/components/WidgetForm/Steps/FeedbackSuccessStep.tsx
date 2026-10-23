@@ -13,7 +13,7 @@ export function FeedbackSuccessStep({
         <CloseButton />
       </header>
 
-      <div className='flex flex-col items-center py-10 w-[304px]'>
+      <div className='flex w-76 flex-col items-center py-10'>
         <svg
           width='41'
           height='40'
@@ -31,13 +31,13 @@ export function FeedbackSuccessStep({
           />
         </svg>
 
-        <span className='text-xl mt-2' role='status'>
+        <span className='mt-2 text-xl' role='status'>
           Agradecemos o feedback!
         </span>
 
         <button
           type='button'
-          className='py-2 px-6 mt-6 bg-zinc-800 rounded-md border-transparent text-sm leading-6 hover:bg-zinc-700 transition-colors focus:outline-hidden focus:ring-2 focus:ring-offset-2 focus:ring-offset-zinc-900 focus:ring-brand-500 disabled:opacity-50 disabled:hover:bg-brand-500'
+          className='mt-6 rounded-md border-transparent bg-zinc-800 px-6 py-2 text-sm/6 transition-colors hover:bg-zinc-700 focus:ring-2 focus:ring-brand-500 focus:ring-offset-2 focus:ring-offset-zinc-900 focus:outline-hidden disabled:opacity-50 disabled:hover:bg-brand-500'
           onClick={onFeedbackRestartRequested}
         >
           Quero enviar outro
